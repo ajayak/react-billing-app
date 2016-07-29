@@ -16,5 +16,6 @@ export default {
     }
   },
   products: [],
-  employees: []
+  employees: [],
+  ajaxCallsInProgress: 0
 };

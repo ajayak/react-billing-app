@@ -10,8 +10,12 @@ require('./favicon.ico');
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './styles/styles.scss';
 import { syncHistoryWithStore } from 'react-router-redux';
+import {loadProducts} from './actions/productActions';
+import {loadEmployees} from './actions/employeeActions';
 
 const store = configureStore();
+store.dispatch(loadProducts());
+store.dispatch(loadEmployees());
 
 const history = syncHistoryWithStore(browserHistory, store);
 

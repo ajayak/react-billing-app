@@ -12,6 +12,8 @@ export default (
     <IndexRoute component={HomePage}/>
     <Route path="fuel-savings" component={FuelSavingsPage}/>
     <Route path="about" component={AboutPage}/>
+    <Route path="products" component={AboutPage}/>
+    <Route path="employees" component={AboutPage}/>
     <Route path="*" component={NotFoundPage}/>
   </Route>
 );

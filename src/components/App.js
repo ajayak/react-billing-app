@@ -1,22 +1,30 @@
-import React, { PropTypes } from 'react';
-import { Link, IndexLink } from 'react-router';
+import React, {PropTypes} from 'react';
+import Header from './common/Header';
+import {connect} from 'react-redux';
 
-const App = (props) => {
-  return (
-    <div>
-      <IndexLink to="/">Home</IndexLink>
-      {' | '}
-      <Link to="/fuel-savings">Demo App</Link>
-      {' | '}
-      <Link to="/about">About</Link>
-      <br/>
-      {props.children}
-    </div>
-  );
-};
+class App extends React.Component {
+  render() {
+    return (
+      <div className="container-fluid">
+        <Header
+          loading={this.props.loading}
+        />
+        {this.props.children}
+      </div>
+    );
+  }
+}
 
 App.propTypes = {
-  children: PropTypes.element
+  children: PropTypes.object.isRequired,
+  loading: PropTypes.bool.isRequired
 };
 
-export default App;
+function mapStateToProps(state) {
+  return {
+    loading: state.ajaxCallsInProgress > 0
+  };
+}
+
+export default connect(mapStateToProps)(App);
+
