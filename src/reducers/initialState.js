@@ -14,5 +14,7 @@ export default {
       annual: 0,
       threeYear: 0
     }
-  }
+  },
+  products: [],
+  employees: []
 };
