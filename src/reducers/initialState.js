@@ -17,5 +17,14 @@ export default {
   },
   products: [],
   employees: [],
-  ajaxCallsInProgress: 0
+  ajaxCallsInProgress: 0,
+  billing: {
+    id: 0,
+    firstName: 'ads',
+    lastName: '',
+    email: '',
+    address: '',
+    items: [],
+    total: 0
+  }
 };

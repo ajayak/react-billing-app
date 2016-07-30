@@ -6,23 +6,27 @@ import delay from './delay';
 const products = [
   {
     id: 1,
-    Name: 'Pen',
-    Category : 'Stationary'
+    name: 'Pen',
+    category : 'Stationary',
+    left: 10
   },
   {
     id: 2,
-    Name: 'Pencil',
-    Category : 'Stationary'
+    name: 'Pencil',
+    category : 'Stationary',
+    left: 10
   },
   {
     id: 3,
-    Name: 'Lays',
-    Category : 'Grocery'
+    name: 'Lays',
+    category : 'Grocery',
+    left: 10
   },
   {
     id: 4,
-    Name: 'Ketchup',
-    Category : 'Grocery'
+    name: 'Ketchup',
+    category : 'Grocery',
+    left: 10
   }
 ];
 

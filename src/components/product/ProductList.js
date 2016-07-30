@@ -8,6 +8,7 @@ const ProductList = ({products}) => {
       <tr>
         <th>Name</th>
         <th>Category</th>
+        <th>Items Left</th>
       </tr>
       </thead>
       <tbody>

@@ -3,8 +3,9 @@ import React, {PropTypes} from 'react';
 const ProductListRow = ({product}) => {
   return (
     <tr>
-      <td>{product.Name}</td>
-      <td>{product.Category}</td>
+      <td>{product.name}</td>
+      <td>{product.category}</td>
+      <td>{product.left}</td>
     </tr>
   );
 };
